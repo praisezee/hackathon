@@ -7,21 +7,29 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <Navbar bg='dark' collapseOnSelect expand="lg" variant='dark'>
-      <Container>
+    <Navbar bg='dark' collapseOnSelect expand="md" variant='dark' className='shadow' fixed='top'>
+      <Container fluid>
         <NavbarBrand>
-          <img src="/vite.svg" alt="" width='30' height='30' className='d-inline-block align-top'/>{''}
+          <Link to='/' className='nav-link'>
+            <img src="/vite.svg" alt="" width='30' height='30' className='d-inline-block align-top'/>{''}
           Fitad Dj
+          </Link>
         </NavbarBrand>
         <NavbarToggle aria-controls='responsive-navbar-nav'/>
         <NavbarCollapse id='responsive-navbar-nav'>
         <div className="me-auto"></div>
         <Nav>
             <NavLink eventKey={1}>
-              <Link to='/' className='nav-link'>Home</Link>
+              <Link to='/' className='nav-link py-1'>Home</Link>
             </NavLink>
             <NavLink eventKey={2}>
-            <Link to='about' className='nav-link'>About</Link>
+            <Link to='about' className='nav-link py-1'>About</Link>
+            </NavLink>
+            <NavLink eventKey={2}>
+            <Link to='login' className='nav-link py-1'>Login</Link>
+            </NavLink>
+            <NavLink eventKey={2}>
+            <Link to='request' className='btn btn-danger py-1'>Make Request</Link>
             </NavLink>
           </Nav>
         </NavbarCollapse>
