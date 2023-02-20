@@ -16,6 +16,15 @@ body{
   height: 100%;
 }
 
+.hero{
+  height: 75vh !important;
+}
+.myform{
+  height: 75vh !important;
+  display: grid;
+  place-content: center;
+}
+
 
 
 
