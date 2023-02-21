@@ -1,10 +1,14 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import SignupForm from './auth/SignupForm'
 
 const Signup = () => {
   return (
-    <div>
-      
-    </div>
+    <main className='mt-4 pt-5'>
+      <Container>
+        <SignupForm/>
+      </Container>
+    </main>
   )
 }
 
